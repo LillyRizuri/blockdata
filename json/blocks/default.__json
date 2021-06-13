@@ -3,6 +3,13 @@
 	"catchesFireFromLava": false,
 	"craftingRecipe": [
 		{
+			"type": "furnace",
+			"item": "item",
+			"makes": "item",
+			"xpGiven": 0.1
+		},
+		{
+			"type": "craftingTable",
 			"shapeless": false,
 			"items": [
 				null,

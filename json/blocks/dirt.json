@@ -1,8 +1,54 @@
 {
-	"blastResistence": 0.5,
+	"id": "dirt",
+	"namespaceID": "dirt",
+	"numericID": 3,
+	"name": "Dirt",
+	"versionAdded": "0.1.0",
+	"description": "Dirt is a block found abundantly in most biomes under a layer of grass blocks at the top of the Overworld.",
+	"usage": "Dirt's primary use is for farming, but it can also be used as a highly available building block.",
+	"imageURL": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/9/9b/Dirt_JE2_BE2.png",
+	"stackable": true,
+	"maxStackSize": 64,
 	"catchesFireFromLava": false,
+	"flammable": false,
+	"renewable": true,
+	"luminant": false,
+	"transparent": false,
+	"diggable": true,
+	"hardness": 0.5,
+	"blastResistence": 0.5,
+	"breaking": {
+		"tool": "shovel",
+		"default": 0.75,
+		"wooden": 0.4,
+		"stone": 0.2,
+		"iron": 0.15,
+		"diamond": 0.1,
+		"netherite": 0.1,
+		"gold": 0.1
+	},
+	"tags": [
+		"bamboo_plantable_on",
+		"enderman_holdable",
+		"dripstone_replaceable_blocks",
+		"moss_replaceable",
+		"lush_ground_replaceable",
+		"mineable/shovel",
+		"dirt"
+	],
+	"metadata": [
+		"dirt",
+		"coarse_dirt"
+	],
+	"states": {
+		"normal": [
+			"normal",
+			"coarse"
+		]
+	},
 	"craftingRecipe": [
 		{
+			"type": "craftingTable",
 			"shapeless": false,
 			"items": [
 				null,
@@ -21,41 +67,6 @@
 			}
 		}
 	],
-	"dataValues": {
-		"java": [],
-		"bedrock": []
-	},
-	"description": "Dirt is a block found abundantly in most biomes under a layer of grass blocks at the top of the Overworld.",
-	"diggable": true,
-	"breaking": {
-		"tool": "shovel",
-		"default": 0.75,
-		"wooden": 0.4,
-		"stone": 0.2,
-		"iron": 0.15,
-		"diamond": 0.1,
-		"netherite": 0.1,
-		"gold": 0.1
-	},
-	"flammable": false,
-	"hardness": 0.5,
-	"id": "dirt",
-	"imageURL": null,
-	"luminant": false,
-	"maxStackSize": 64,
-	"renewable": true,
-	"sections": {
-		"obtaining": {
-			"Natural generation": "Dirt is found at any altitude, and comprises the majority of the upper terrain layers in most overworld biomes, bridging the gap between stone and grass blocks in various thicknesses.\nThere are approximately 1,850 dirt blocks per chunk in plains, forest, snowy tundra, jungle, and mountain biomes. There can be as many as 3,000 in chunks with high mountains. Dirt also generates naturally in some houses in villages. Dirt also generates as part of the dirt floor found in the starting point area in mineshafts.\nDirt can generate in the Overworld in the form of blobs. Dirt attempts to generate 15 times per chunk in blobs of size 0-160 at any level in all biomes. It can replace stone, granite, diorite, andesite, tuff and deepslate.",
-			"Breaking": "Dirt drops as an item when broken with any tool or by hand, but a shovel is the fastest way to break it.",
-			"Mob loot": "Endermen drop a dirt block upon death, if holding one.",
-			"Post-generation": "Farmland turns into dirt if either a mob jumps on it, or if nothing is planted on it and it is not within four blocks of water.\nCoarse dirt can be tilled with a hoe to become dirt. This allows the player to convert gravel into dirt. Two blocks each of gravel and dirt become four blocks of coarse dirt, which can then be placed and tilled, which makes a renewable source of dirt.\nCertain blocks can also transform into dirt when in invalid states, such as the death of grass blocks."
-		},
-		"usage": {
-			"Farming": "Dirt has the ability to grow saplings, sugar cane, mushrooms, sweet berries, and bamboo, which can be planted directly in dirt under appropriate conditions.\nUsing a hoe on dirt turns it into farmland, enabling wheat seeds, pumpkin seeds, melon seeds, potatoes, carrots and beetroot seeds to be planted on it.",
-			"Grass and mycelium spreading": "When a dirt block is adjacent to a grass block and is exposed to a light level of at least 4, it is eventually converted into a grass block at random intervals.\nMycelium spreads in a similar fashion, but requires a light level of at least 9."
-		}
-	},
 	"sounds": [
 		{
 			"subtitle": "Block broken",
@@ -108,9 +119,16 @@
 			"distance": 16
 		}
 	],
-	"stackable": true,
-	"stateIDs": [],
-	"transparent": false,
-	"usage": "Dirt's primary use is for farming, but it can also be used as a highly available building block.",
-	"versionAdded": ""
+	"sections": {
+		"obtaining": {
+			"Natural generation": "Dirt is found at any altitude, and comprises the majority of the upper terrain layers in most overworld biomes, bridging the gap between stone and grass blocks in various thicknesses.\nThere are approximately 1,850 dirt blocks per chunk in plains, forest, snowy tundra, jungle, and mountain biomes. There can be as many as 3,000 in chunks with high mountains. Dirt also generates naturally in some houses in villages. Dirt also generates as part of the dirt floor found in the starting point area in mineshafts.\nDirt can generate in the Overworld in the form of blobs. Dirt attempts to generate 15 times per chunk in blobs of size 0-160 at any level in all biomes. It can replace stone, granite, diorite, andesite, tuff and deepslate.",
+			"Breaking": "Dirt drops as an item when broken with any tool or by hand, but a shovel is the fastest way to break it.",
+			"Mob loot": "Endermen drop a dirt block upon death, if holding one.",
+			"Post-generation": "Farmland turns into dirt if either a mob jumps on it, or if nothing is planted on it and it is not within four blocks of water.\nCoarse dirt can be tilled with a hoe to become dirt. This allows the player to convert gravel into dirt. Two blocks each of gravel and dirt become four blocks of coarse dirt, which can then be placed and tilled, which makes a renewable source of dirt.\nCertain blocks can also transform into dirt when in invalid states, such as the death of grass blocks."
+		},
+		"usage": {
+			"Farming": "Dirt has the ability to grow saplings, sugar cane, mushrooms, sweet berries, and bamboo, which can be planted directly in dirt under appropriate conditions.\nUsing a hoe on dirt turns it into farmland, enabling wheat seeds, pumpkin seeds, melon seeds, potatoes, carrots and beetroot seeds to be planted on it.",
+			"Grass and mycelium spreading": "When a dirt block is adjacent to a grass block and is exposed to a light level of at least 4, it is eventually converted into a grass block at random intervals.\nMycelium spreads in a similar fashion, but requires a light level of at least 9."
+		}
+	}
 }

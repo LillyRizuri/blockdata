@@ -1,0 +1,353 @@
+{
+	"id": "stone",
+	"namespaceID": "stone",
+	"numericID": 1,
+	"name": "Stone",
+	"versionAdded": "0.1.0",
+	"description": "Stone is a block found underground in the Overworld or on the surface of mountains.",
+	"usage": null,
+	"imageURL": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/29/Stone_JE4_BE3.png",
+	"stackable": true,
+	"maxStackSize": 64,
+	"catchesFireFromLava": false,
+	"flammable": false,
+	"renewable": true,
+	"luminant": false,
+	"transparent": false,
+	"diggable": true,
+	"hardness": 1.5,
+	"blastResistence": 6,
+	"breaking": {
+		"tool": "shovel",
+		"default": 7.5,
+		"wooden": 1.15,
+		"stone": 0.6,
+		"iron": 0.4,
+		"diamond": 0.3,
+		"netherite": 0.25,
+		"gold": 0.2
+	},
+	"tags": [
+		"base_stone_overworld",
+		"dripstone_replaceable_blocks",
+		"lush_ground_replaceable",
+		"moss_replaceable",
+		"mineable/pickaxe",
+		"stone_ore_replaceables"
+	],
+	"metadata": [
+		"stone",
+		"granite",
+		"polished_granite",
+		"diorite",
+		"polished_diorite",
+		"andesite",
+		"polished_andesite"
+	],
+	"states": {
+		"stone_type": [
+			"stone",
+			"granite",
+			"polished_granite",
+			"diorite",
+			"polished_diorite",
+			"andesite",
+			"polished_andesite"
+		]
+	},
+	"craftingRecipe": [
+		{
+			"type": "furnace",
+			"item": "cobblestone",
+			"makes": {
+				"id": "stone"
+			},
+			"xpGiven": 0.1
+		},
+		{
+			"type": "furnace",
+			"item": "stone",
+			"makes": {
+				"id": "smooth_stone"
+			},
+			"xpGiven": 0.1
+		},
+		{
+			"type": "craftingTable",
+			"shapeless": false,
+			"items": [
+				null,
+				"redstone_torch",
+				null,
+				"redstone_torch",
+				"quartz",
+				"redstone_torch",
+				"stone",
+				"stone",
+				"stone"
+			],
+			"makes": {
+				"id": "comparator",
+				"count": 1
+			}
+		},
+		{
+			"type": "craftingTable",
+			"shapeless": false,
+			"items": [
+				null,
+				null,
+				null,
+				"redstone_torch",
+				"redstone",
+				"redstone_torch",
+				"stone",
+				"stone",
+				"stone"
+			],
+			"makes": {
+				"id": "repeater",
+				"count": 1
+			}
+		},
+		{
+			"type": "craftingTable",
+			"shapeless": true,
+			"items": [
+				"stone"
+			],
+			"makes": {
+				"id": "stone_button",
+				"count": 1
+			}
+		},
+		{
+			"type": "craftingTable",
+			"shapeless": false,
+			"items": [
+				null,
+				null,
+				null,
+				"stone",
+				"stone",
+				null,
+				null,
+				null,
+				null
+			],
+			"makes": {
+				"id": "stone_pressure_plate",
+				"count": 1
+			}
+		},
+		{
+			"type": "craftingTable",
+			"shapeless": false,
+			"items": [
+				null,
+				null,
+				null,
+				"stone",
+				"stone",
+				null,
+				"stone",
+				"stone",
+				null
+			],
+			"makes": {
+				"id": "stone_bricks",
+				"count": 4
+			}
+		},
+		{
+			"type": "craftingTable",
+			"shapeless": false,
+			"items": [
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"stone",
+				"stone",
+				"stone"
+			],
+			"makes": {
+				"id": "stone_slab",
+				"count": 6
+			}
+		},
+		{
+			"type": "craftingTable",
+			"shapeless": false,
+			"items": [
+				"stone",
+				null,
+				null,
+				"stone",
+				"stone",
+				null,
+				"stone",
+				"stone",
+				"stone"
+			],
+			"makes": {
+				"id": "stone_stairs",
+				"count": 4
+			}
+		},
+		{
+			"type": "craftingTable",
+			"shapeless": false,
+			"items": [
+				null,
+				null,
+				null,
+				null,
+				"iron_ingot",
+				null,
+				"stone",
+				"stone",
+				"stone"
+			],
+			"makes": {
+				"id": "stonecutter",
+				"count": 1
+			}
+		},
+		{
+			"type": "stonecutter",
+			"item": "stone",
+			"makes": [
+				"stone_slab",
+				"stone_stairs",
+				"stone_bricks",
+				"stone_brick_slab",
+				"stone_brick_stairs",
+				"stone_brick_wall",
+				"chiseled_stone_bricks"
+			],
+			"xpGiven": 0.1
+		}
+	],
+	"sounds": {
+		"java": [
+			{
+				"subtitle": "Block broken",
+				"Source": "Blocks",
+				"description": "Once the block has broken",
+				"id": "block.stone.break",
+				"translationKey": "subtitles.block.generic.break",
+				"volume": 1,
+				"pitch": 0.8,
+				"distance": 16
+			},
+			{
+				"subtitle": null,
+				"Source": "Blocks",
+				"description": "Falling on the block with fall damage",
+				"id": "block.stone.fall",
+				"translationKey": null,
+				"volume": 0.5,
+				"pitch": 0.75,
+				"distance": 16
+			},
+			{
+				"subtitle": "Block breaking",
+				"Source": "Blocks",
+				"description": "While the block is in the process of being broken",
+				"id": "block.stone.hit",
+				"translationKey": "subtitles.block.generic.hit",
+				"volume": 0.25,
+				"pitch": 0.5,
+				"distance": 16
+			},
+			{
+				"subtitle": "Block placed",
+				"Source": "Blocks",
+				"description": "When the block is placed",
+				"id": "block.stone.place",
+				"translationKey": "subtitles.block.generic.place",
+				"volume": 1,
+				"pitch": 0.8,
+				"distance": 16
+			},
+			{
+				"subtitle": "Footsteps",
+				"Source": "Blocks",
+				"description": "Walking on the block",
+				"id": "block.stone.step",
+				"translationKey": "subtitles.block.generic.footsteps",
+				"volume": 0.15,
+				"pitch": 1,
+				"distance": 16
+			}
+		],
+		"bedrock": [
+			{
+				"Source": "Blocks",
+				"description": "Once the block has broken",
+				"id": "dig.stone",
+				"volume": 1,
+				"pitch": 0.8
+			},
+			{
+				"Source": "Blocks",
+				"description": "Falling on the block with fall damage",
+				"id": "fall.stone",
+				"volume": 0.4,
+				"pitch": 1
+			},
+			{
+				"Source": "Blocks",
+				"description": "While the block is in the process of being broken",
+				"id": "hit.stone",
+				"volume": 0.37,
+				"pitch": 0.5
+			},
+			{
+				"Source": "Blocks",
+				"description": "Jumping from the block",
+				"id": "jump.stone",
+				"volume": 0.12,
+				"pitch": 1
+			},
+			{
+				"Source": "Blocks",
+				"description": "Falling on the block without fall damage",
+				"id": "land.stone",
+				"volume": 0.22,
+				"pitch": 1
+			},
+			{
+				"Source": "Blocks",
+				"description": "Walking on the block",
+				"id": "step.stone",
+				"volume": 0.3,
+				"pitch": 1
+			},
+			{
+				"Source": "Blocks",
+				"description": "When the block is placed",
+				"id": "use.stone",
+				"volume": 1,
+				"pitch": 0.8
+			}
+		]
+	},
+	"sections": {
+		"obtaining": {
+			"body": "Stone requires a pickaxe to be mined, in which case it drops cobblestone. When mined without a pickaxe, it drops nothing. If a stone is mined with a Silk Touch enchanted pickaxe, it drops itself.",
+			"Natural generation": "Stone makes up the majority of the solid blocks generated in the overworld. When chunks generate, stone can be found under 1-5 layers of grass blocks, dirt, gravel, clay, coarse dirt, podzol, mycelium, sand, sandstone, red sand, red sandstone or terracotta, depending on the biome. There is approximately 11,520 stone per chunk.\nWhen the world is generating new chunks, some stone is replaced with blobs of other blocks, and almost every cavern and mineshaft generates at the stone level.",
+			"Mob loot": "Endermen drop a dirt block upon death, if holding one.",
+			"Smelting": "Stone can be smelted from cobblestone.",
+			"Post-generation": "Stone can also be made by lava flowing on top of water blocks (both flowing and source). The water is replaced with stone."
+		},
+		"usage": {
+			"Silverfish": "Silverfish can enter and hide in stone, creating an infested block.",
+			"Trading": "Apprentice-level stone mason villagers offer to buy 20 stone for an emerald.",
+			"Note Blocks": "Stone can be placed under note blocks to produce \"bass drum\" sound."
+		}
+	}
+}
