@@ -1,0 +1,492 @@
+{
+	"id": "stone",
+	"namespaceID": "stone",
+	"numericID": 1,
+	"name": "Stone",
+	"versionAdded": "0.1.0",
+	"description": "Cobblestone is a common block, obtained from mining stone. Its texture resembles a block of stone with a largely cracked surface. It is mainly used for crafting or as building block.",
+	"usage": null,
+	"imageURL": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/6/6a/Cobblestone_JE6_BE3.png",
+	"stackable": true,
+	"maxStackSize": 64,
+	"catchesFireFromLava": false,
+	"flammable": false,
+	"renewable": true,
+	"luminant": false,
+	"transparent": false,
+	"diggable": true,
+	"hardness": 2,
+	"blastResistence": 6,
+	"breaking": {
+		"tool": "pickaxe",
+		"default": 10,
+		"wooden": 1.5,
+		"stone": 0.75,
+		"iron": 0.5,
+		"diamond": 0.4,
+		"netherite": 0.35,
+		"gold": 0.25
+	},
+	"tags": [
+		"mineable/pickaxe"
+	],
+	"metadata": [
+	],
+	"states": {
+		"stone_type": [
+			"stone",
+			"granite",
+			"polished_granite",
+			"diorite",
+			"polished_diorite",
+			"andesite",
+			"polished_andesite"
+		]
+	},
+	"craftingRecipe": [
+		{
+			"type": "furnace",
+			"item": "cobblestone",
+			"makes": {
+				"id": "stone"
+			},
+			"xpGiven": 0.1
+		},
+		{
+			"type": "craftingTable",
+			"shapeless": true,
+			"items": [
+				"cobblestone",
+				"diorite"
+			],
+			"makes": {
+				"id": "andesite",
+				"count": 2
+			}
+		},
+		{
+			"type": "craftingTable",
+			"shapeless": false,
+			"items": [
+				null,
+				null,
+				null,
+				null,
+				"blaze_rod",
+				null,
+				"cobblestone",
+				"cobblestone",
+				"cobblestone"
+			],
+			"makes": {
+				"id": "brewing_stand",
+				"count": 1
+			}
+		},
+		{
+			"type": "craftingTable",
+			"shapeless": false,
+			"items": [
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				"cobblestone",
+				"cobblestone",
+				"cobblestone"
+			],
+			"makes": {
+				"id": "stone_slab",
+				"count": 6
+			}
+		},
+		{
+			"type": "craftingTable",
+			"shapeless": false,
+			"items": [
+				"cobblestone",
+				null,
+				null,
+				"cobblestone",
+				"cobblestone",
+				null,
+				"cobblestone",
+				"cobblestone",
+				"cobblestone"
+			],
+			"makes": {
+				"id": "cobblestone_stairs",
+				"count": 4
+			}
+		},
+		{
+			"type": "craftingTable",
+			"shapeless": false,
+			"items": [
+				null,
+				null,
+				null,
+				"cobblestone",
+				"cobblestone",
+				"cobblestone",
+				"cobblestone",
+				"cobblestone",
+				"cobblestone"
+			],
+			"makes": {
+				"id": "cobblestone_walls",
+				"count": 6
+			}
+		},
+		{
+			"type": "craftingTable",
+			"shapeless": false,
+			"items": [
+				"cobblestone",
+				"cobblestone",
+				"cobblestone",
+				"cobblestone",
+				"bow",
+				"cobblestone",
+				"cobblestone",
+				"redstone",
+				"cobblestone"
+			],
+			"makes": {
+				"id": "dispenser",
+				"count": 1
+			}
+		},
+		{
+			"type": "craftingTable",
+			"shapeless": false,
+			"items": [
+				"cobblestone",
+				"cobblestone",
+				"cobblestone",
+				"cobblestone",
+				null,
+				"cobblestone",
+				"cobblestone",
+				"redstone",
+				"cobblestone"
+			],
+			"makes": {
+				"id": "dropper",
+				"count": 1
+			}
+		},
+		{
+			"type": "craftingTable",
+			"shapeless": false,
+			"items": [
+				"cobblestone",
+				"cobblestone",
+				"cobblestone",
+				"cobblestone",
+				null,
+				"cobblestone",
+				"cobblestone",
+				"cobblestone",
+				"cobblestone"
+			],
+			"makes": {
+				"id": "furnace",
+				"count": 1
+			}
+		},
+		{
+			"type": "craftingTable",
+			"shapeless": false,
+			"items": [
+				null,
+				null,
+				null,
+				null,
+				"stick",
+				null,
+				null,
+				"cobblestone",
+				null
+			],
+			"makes": {
+				"id": "lever",
+				"count": 1
+			}
+		},
+		{
+			"type": "craftingTable",
+			"shapeless": true,
+			"items": [
+				"cobblestone",
+				"moss_block"
+			],
+			"makes": {
+				"id": "mossy_cobblestone",
+				"count": 1
+			}
+		},
+		{
+			"type": "craftingTable",
+			"shapeless": true,
+			"items": [
+				"cobblestone",
+				"vines"
+			],
+			"makes": {
+				"id": "mossy_cobblestone",
+				"count": 1
+			}
+		},
+		{
+			"type": "craftingTable",
+			"shapeless": false,
+			"items": [
+				"cobblestone",
+				"cobblestone",
+				"cobblestone",
+				"redstone",
+				"redstone",
+				"quartz",
+				"cobblestone",
+				"cobblestone",
+				"cobblestone"
+			],
+			"makes": {
+				"id": "observer",
+				"count": 1
+			}
+		},
+		{
+			"type": "craftingTable",
+			"shapeless": false,
+			"items": [
+				"oak_planks",
+				"oak_planks",
+				"oak_planks",
+				"cobblestone",
+				"iron_ingot",
+				"cobblestone",
+				"cobblestone",
+				"redstone",
+				"cobblestone"
+			],
+			"makes": {
+				"id": "piston",
+				"count": 1
+			}
+		},
+		{
+			"type": "craftingTable",
+			"shapeless": false,
+			"items": [
+				null,
+				"cobblestone",
+				null,
+				null,
+				"stick",
+				null,
+				null,
+				"stick",
+				null
+			],
+			"makes": {
+				"id": "stone_shovel",
+				"count": 1
+			}
+		},
+		{
+			"type": "craftingTable",
+			"shapeless": false,
+			"items": [
+				null,
+				"cobblestone",
+				null,
+				null,
+				"cobblestone",
+				null,
+				null,
+				"stick",
+				null
+			],
+			"makes": {
+				"id": "stone_sword",
+				"count": 1
+			}
+		},
+		{
+			"type": "craftingTable",
+			"shapeless": false,
+			"items": [
+				"cobblestone",
+				"cobblestone",
+				"cobblestone",
+				null,
+				"stick",
+				null,
+				null,
+				"stick",
+				null
+			],
+			"makes": {
+				"id": "stone_pickaxe",
+				"count": 1
+			}
+		},
+		{
+			"type": "craftingTable",
+			"shapeless": false,
+			"items": [
+				"cobblestone",
+				"cobblestone",
+				null,
+				null,
+				"stick",
+				null,
+				null,
+				"stick",
+				null
+			],
+			"makes": {
+				"id": "stone_hoe",
+				"count": 1
+			}
+		},
+		{
+			"type": "craftingTable",
+			"shapeless": false,
+			"items": [
+				"cobblestone",
+				"cobblestone",
+				null,
+				"cobblestone",
+				"stick",
+				null,
+				null,
+				"stick",
+				null
+			],
+			"makes": {
+				"id": "stone_axe",
+				"count": 1
+			}
+		}
+	],
+	"sounds": {
+		"java": [
+			{
+				"subtitle": "Block broken",
+				"Source": "Blocks",
+				"description": "Once the block has broken",
+				"id": "block.stone.break",
+				"translationKey": "subtitles.block.generic.break",
+				"volume": 1,
+				"pitch": 0.8,
+				"distance": 16
+			},
+			{
+				"subtitle": null,
+				"Source": "Blocks",
+				"description": "Falling on the block with fall damage",
+				"id": "block.stone.fall",
+				"translationKey": null,
+				"volume": 0.5,
+				"pitch": 0.75,
+				"distance": 16
+			},
+			{
+				"subtitle": "Block breaking",
+				"Source": "Blocks",
+				"description": "While the block is in the process of being broken",
+				"id": "block.stone.hit",
+				"translationKey": "subtitles.block.generic.hit",
+				"volume": 0.25,
+				"pitch": 0.5,
+				"distance": 16
+			},
+			{
+				"subtitle": "Block placed",
+				"Source": "Blocks",
+				"description": "When the block is placed",
+				"id": "block.stone.place",
+				"translationKey": "subtitles.block.generic.place",
+				"volume": 1,
+				"pitch": 0.8,
+				"distance": 16
+			},
+			{
+				"subtitle": "Footsteps",
+				"Source": "Blocks",
+				"description": "Walking on the block",
+				"id": "block.stone.step",
+				"translationKey": "subtitles.block.generic.footsteps",
+				"volume": 0.15,
+				"pitch": 1,
+				"distance": 16
+			}
+		],
+		"bedrock": [
+			{
+				"Source": "Blocks",
+				"description": "Once the block has broken",
+				"id": "dig.stone",
+				"volume": 1,
+				"pitch": 0.8
+			},
+			{
+				"Source": "Blocks",
+				"description": "Falling on the block with fall damage",
+				"id": "fall.stone",
+				"volume": 0.4,
+				"pitch": 1
+			},
+			{
+				"Source": "Blocks",
+				"description": "While the block is in the process of being broken",
+				"id": "hit.stone",
+				"volume": 0.37,
+				"pitch": 0.5
+			},
+			{
+				"Source": "Blocks",
+				"description": "Jumping from the block",
+				"id": "jump.stone",
+				"volume": 0.12,
+				"pitch": 1
+			},
+			{
+				"Source": "Blocks",
+				"description": "Falling on the block without fall damage",
+				"id": "land.stone",
+				"volume": 0.22,
+				"pitch": 1
+			},
+			{
+				"Source": "Blocks",
+				"description": "Walking on the block",
+				"id": "step.stone",
+				"volume": 0.3,
+				"pitch": 1
+			},
+			{
+				"Source": "Blocks",
+				"description": "When the block is placed",
+				"id": "use.stone",
+				"volume": 1,
+				"pitch": 0.8
+			}
+		]
+	},
+	"sections": {
+		"obtaining": {
+			"body": "Cobblestone requires a pickaxe to be mined, in which case it drops itself. If mined without a pickaxe, mining will be slower and it drops nothing. Its hardness is greater than stone so it requires more time to break.",
+			"Natural generation": "Cobblestone occurs naturally in dungeons, jungle temples, pillager outposts, underwater ruins, strongholds, Villages and woodland mansions.",
+			"Post-generation": "When water and flowing lava come into contact, the flowing lava is replaced with cobblestone. However, if the lava flows on top of the water from above, stone is created instead. Non-flowing lava (a lava source block) turns into obsidian upon contact with water, thus the requirement of flowing lava."
+		},
+		"usage": {
+			"Silverfish": "Silverfish can enter and hide in cobblestone, creating an infested block."
+		}
+	}
+}
