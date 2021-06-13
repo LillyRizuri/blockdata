@@ -1,0 +1,57 @@
+{
+	"blastResistence": 0,
+	"catchesFireFromLava": false,
+	"craftingRecipe": [
+		{
+			"shapeless": false,
+			"items": [
+				null,
+				"itemName",
+				null,
+				null,
+				"itemName",
+				null,
+				null,
+				"itemName",
+				null
+			]
+		},
+		{
+			"shapeless": true,
+			"items": [
+				"itemName",
+				"itemName",
+				"itemName"
+			]
+		}
+	],
+	"dataValues": {
+		"java": [],
+		"bedrock": []
+	},
+	"description": "",
+	"diggable": true,
+	"breaking": {
+		"default": 15,
+		"wooden": 7.5,
+		"stone": 1.15,
+		"iron": 0.75,
+		"diamond": 0.6,
+		"netherite": 0.5,
+		"gold": 1.25
+	},
+	"flammable": false,
+	"hardness": 0,
+	"id": "",
+	"imageURL": null,
+	"luminant": false,
+	"maxStackSize": null,
+	"renewable": true,
+	"sections": {},
+	"sounds": {},
+	"stackable": null,
+	"stateIDs": [],
+	"transparent": true,
+	"usage": "",
+	"versionAdded": ""
+}

@@ -1,0 +1,32 @@
+{
+	"blastResistence": 0,
+	"catchesFireFromLava": false,
+	"craftingRecipe": [],
+	"dataValues": {
+		"java": [
+			"cave_air",
+			"void_air",
+			"empty"
+		],
+		"bedrock": []
+	},
+	"description": "Air is an invisible block used to define empty space where any other blocks could otherwise exist.",
+	"diggable": true,
+	"breaking": {},
+	"flammable": false,
+	"hardness": 0,
+	"id": "air",
+	"imageURL": null,
+	"luminant": false,
+	"maxStackSize": null,
+	"renewable": true,
+	"sections": {
+		"obtaining": "In Bedrock Edition, air cannot be obtained in the inventory without editing. In Java Edition, the block is completely unobtainable. Air can be destroyed or created only by the placement or removal of other blocks respectively.\nUpon world generation, all otherwise empty spaces are occupied by air. In Java Edition, badlands, mineshafts, and surface ponds generate cave air, and underground structures generate cave air. Void air is used in place of unloaded chunks and above or below the world's buildable area.‌"
+	},
+	"sounds": {},
+	"stackable": null,
+	"stateIDs": [],
+	"transparent": true,
+	"usage": "Air shares some properties with non-solid blocks, including allowing the player or mob to move within that space without suffocating, and also to catch their breath if they are drowning in water.\nAir can be visualized with the use of structure blocks in save mode. With \"Show invisible blocks\" enabled, the air is represented as small blue cubes. All air types are displayed identically as blue cubes.\nCave air and void air have no special properties; they function the same as normal air.",
+	"versionAdded": "0.1.0"
+}
